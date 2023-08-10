@@ -1,0 +1,22 @@
+namespace ConsoleApp1 
+{
+    internal class Program
+    {
+        static void main(string[] args)
+        {
+            // Her er værdien af length i int form
+            int length = 16;
+            // Her er værdien af width i double form
+            double width = 5.1;
+            //Her er prøves værdien af area at blive regnet.
+            //Men fordi bliver regnet ind i en int værdi når en a tallene har discimal funker det ikke
+            int area = width * length;
+            //Her bliver det samme udregnet.
+            //Men fordi den bliver regnet ind i en double væredi som kan håndteger discimal funker det.
+            double d = width * length;
+            //Her ganges de sammen for at få area værdien 
+            Console.WriteLine(length * width);
+            
+        }
+    }
+}
