@@ -1,4 +1,4 @@
-﻿namespace Fødselsdagen
+namespace Fødselsdagen
 {
     class Program
     {
@@ -13,7 +13,7 @@
             //Here it does all the calculations to find your age
             DateTime now = DateTime.Now;
             TimeSpan difference = now - birthday;
-            int years = (int)Math.Floor(difference.TotalDays) / 365;
+            int years = (int)Math.Floor(difference.TotalDays / 365.2425);
             birthday = birthday.AddYears(years);
             difference = now - birthday;
             int days = (int)Math.Floor(difference.TotalDays);
